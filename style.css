@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 200%;
+    width: 100%;
+}
+
+:root {
+    --main-bgc: rgba(125, 198, 229, 0.2);
+    --sidebar-bgc: rgba(18, 132, 226, 0.8);
+    --card-bgc: white;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) 1fr;
+    grid-template-rows: 120px 120px 1fr;
+}
+
+aside.sidebar {
+    grid-area: 1 / 1 / -1 / 2;
+    background-color: var(--sidebar-bgc);
+    color: white;
+    padding: 1em;
+}
+
+header {
+    padding: 1em 3em;
+    grid-area: 1 / 2 / 2 / -1;
+    box-shadow: 0 2px 10px darkgrey;
+}
+
+.content {
+    grid-area: 2 / 2 / -1 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--main-bgc);
+    padding: 2em 1em;
+    gap: 1em;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+    font-size: 24px;
+}
+
+ul.user-options {
+    margin-top: 2em;
+}
+
+span.icon {
+    margin-right: 1em;
+}
+
+aside.sidebar > h1 a {
+    font-size: 28px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-auto-rows: 13em;
+    gap: 1em;
+}
+
+.announcements > div.card, .trending > div.card {
+    border-left: none;
+}
+
+.announcement {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.announcement:not(:last-child) {
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid darkgrey;
+    margin-bottom: 1em;
+}
+
+.announcement > h3 {
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+div.popularity-list {
+    display: inline-block;
+}
+
+div.card {
+    background-color: var(--card-bgc);
+    border-radius: 5px;
+    border-left: 4px solid orange;
+    padding: 1.5em;
+    box-shadow: 5px 5px 5px rgba(169, 169, 169, 0.56);
+}
+
+nav {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.welcome {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.welcome > div {
+    display: inline-block;
+}
+
+a.search {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+label[for="search"] {
+    flex: 1;
+    height: 2em;
+}
+
+input#search {
+    margin-left: 2em;
+    padding-left: 1em;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: var(--main-bgc);
+    border-radius: 100px;
+}
+
