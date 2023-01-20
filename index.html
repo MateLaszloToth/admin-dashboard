@@ -12,22 +12,24 @@
 <body>
 <header>
   <nav>
-    <a class="search" href=""><i class="fa-solid fa-magnifying-glass icon"></i>
-      <label for="search">
-        <input id="search" type="text" placeholder="Search"/>
-      </label>
-    </a>
-    <div>
-      <a><span>i</span></a>
-      <img src="" alt="">
-      <a href=""><span>John Doe</span></a>
+    <label for="search">
+      <i class="fa-solid fa-magnifying-glass icon"></i>
+      <input id="search" type="text" placeholder="Search"/>
+    </label>
+    <div class="account-indicator">
+      <a href=""><i class="fa-regular fa-bell"></i></a>
+      <img src="https://picsum.photos/id/237/50" alt="Random image"/>
+      <a href=""><span>Morgan Oakley</span></a>
     </div>
   </nav>
   <div class="welcome">
     <div class="user">
-      <img src="" alt="">Hi there,
-      <br><span>Morgan Oakley (@morgan)</span></div>
-    <div>
+      <img src="https://picsum.photos/id/237/50" alt=""/>
+      <div class="greeting">
+        Hi there,
+        <br><span>Morgan Oakley (@morgan)</span></div>
+    </div>
+    <div class="nav-buttons">
       <button type="button">New</button>
       <button type="button">Upload</button>
       <button type="button">Share</button>
@@ -35,7 +37,7 @@
   </div>
 </header>
 <aside class="sidebar">
-  <h1><a href=""><i class="fa-solid fa-grip-vertical"></i>Dashboard</a></h1>
+  <h1><a href=""><i class="fa-solid fa-grip-vertical icon"></i>Dashboard</a></h1>
 
   <ul class="user-options">
     <li><a href=""><i class="fa-solid fa-house icon"></i>Home</a></li>
@@ -62,7 +64,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laborum molestias nulla! Ad doloremque et
            excepturi facilis fuga libero molestias placeat ratione. Dolor earum incidunt iure iusto molestias nobis
            repellat?</p>
-        <div>
+        <div class="card-actions">
           <a href=""><i class="fa-regular fa-star icon card-star-icon"></i></a>
           <a href=""><i class="fa-regular fa-eye icon card-view-icon"></i></a>
           <a href=""><i class="fa-solid fa-code-branch icon card-share-icon"></i></a>
@@ -73,7 +75,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, assumenda beatae ex explicabo hic
            itaque natus nihil, obcaecati quidem rerum suscipit tempora temporibus ullam unde voluptatum. Est fugiat
            laborum saepe.</p>
-        <div>
+        <div class="card-actions">
           <a href=""><i class="fa-regular fa-star icon card-star-icon"></i></a>
           <a href=""><i class="fa-regular fa-eye icon card-view-icon"></i></a>
           <a href=""><i class="fa-solid fa-code-branch icon card-share-icon"></i></a>
@@ -84,7 +86,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur corporis doloremque excepturi
            laudantium, qui quisquam quod soluta sunt. Error facilis fuga molestias nesciunt nihil obcaecati, porro quasi
            sint tempore?</p>
-        <div>
+        <div class="card-actions">
           <a href=""><i class="fa-regular fa-star icon card-star-icon"></i></a>
           <a href=""><i class="fa-regular fa-eye icon card-view-icon"></i></a>
           <a href=""><i class="fa-solid fa-code-branch icon card-share-icon"></i></a>
@@ -94,7 +96,7 @@
         <h3>Weather Forecast</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eos fugiat id illum impedit iste laboriosam
            laborum libero magnam nemo odio officia, quam quas, qui, soluta suscipit velit voluptatum? Facere.</p>
-        <div>
+        <div class="card-actions">
           <a href=""><i class="fa-regular fa-star icon card-star-icon"></i></a>
           <a href=""><i class="fa-regular fa-eye icon card-view-icon"></i></a>
           <a href=""><i class="fa-solid fa-code-branch icon card-share-icon"></i></a>
@@ -105,7 +107,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto consectetur dignissimos distinctio
            doloremque eos exercitationem id maxime modi nihil nisi omnis praesentium, quas, quo quod repellat similique
            tenetur vel.</p>
-        <div>
+        <div class="card-actions">
           <a href=""><i class="fa-regular fa-star icon card-star-icon"></i></a>
           <a href=""><i class="fa-regular fa-eye icon card-view-icon"></i></a>
           <a href=""><i class="fa-solid fa-code-branch icon card-share-icon"></i></a>
@@ -116,7 +118,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis dignissimos dolorem dolorum earum
            facilis hic labore magni, officiis, omnis pariatur repellendus. Atque laboriosam libero natus omnis quibusdam
            soluta totam.</p>
-        <div>
+        <div class="card-actions">
           <a href=""><i class="fa-regular fa-star icon card-star-icon"></i></a>
           <a href=""><i class="fa-regular fa-eye icon card-view-icon"></i></a>
           <a href=""><i class="fa-solid fa-code-branch icon card-share-icon"></i></a>
@@ -146,30 +148,42 @@
     <div class="trending">
       <h2>Trending</h2>
       <div class="card">
-        <div class=""><a href=""><img src="" alt=""/>
+        <div class="trending-item">
+          <a href="">
+            <img src="https://picsum.photos/50" alt=""/>
+          </a>
           <div class="popularity-list">
             <h3>@john</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur </p>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-        </a></div>
-        <div class=""><a href=""><img src="" alt=""/>
+        </div>
+        <div class="trending-item">
+          <a href="">
+            <img src="https://picsum.photos/50" alt=""/>
+          </a>
           <div class="popularity-list">
             <h3>@dave</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur </p>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-        </a></div>
-        <div class=""><a href=""><img src="" alt=""/>
+        </div>
+        <div class="trending-item">
+          <a href="">
+            <img src="https://picsum.photos/50" alt=""/>
+          </a>
           <div class="popularity-list">
             <h3>@james</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur </p>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-        </a></div>
-        <div class=""><a href=""><img src="" alt=""/>
+        </div>
+        <div class="trending-item">
+          <a href="">
+            <img src="https://picsum.photos/50" alt=""/>
+          </a>
           <div class="popularity-list">
             <h3>@nick</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur </p>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-        </a></div>
+        </div>
       </div>
     </div>
   </aside>
